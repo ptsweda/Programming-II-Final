@@ -15,9 +15,9 @@ st.set_page_config(
 
 st.image('linkedin1.jpg')
 # Title of the App
-st.title("Who's a user?")
-st.subheader("Predicting :blue[LinkedIn Users] with Manchine Learning")
-st.write("Sometimes it seems like the whole world uses LinkedIn. Of course, while it is a popular social networking site and useful for marketing purposes, not everyone uses it. Our marketing analytics team has built the following app to help evaluate options for promoting the business on different mediums by predicting wheather someone uses LinkedIn.")
+st.title("Who's A User?")
+st.subheader("Predicting :blue[LinkedIn Users] with Machine Learning")
+st.write("Sometimes it seems like the whole world uses LinkedIn. Of course, while it is a popular social networking site and useful for marketing purposes, not everyone uses it. Our marketing analytics team has built the following app to help evaluate options for promoting the business on different mediums by predicting whether someone uses LinkedIn.")
 st.header("", divider='blue')       
 
 # Load the dataset
@@ -159,6 +159,6 @@ probs = lr.predict_proba([person])
 
 probs = np.round(probs, 2)
 
-result = st.button(":red[Calculate Probability they are on LinkedIn!]")
+result = st.button(":red[Calculate The Probability They Are On LinkedIn!]")
 st.write(result)
 if result: st.write(f"There is a **:blue[{probs[0][1]}] probability** that this {gen_label} is on :blue[LinkedIn]")
