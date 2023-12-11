@@ -155,6 +155,7 @@ person = [inc, educ, par, mar, gen, age]
 # Predict class, given input features
 predicted_class = lr.predict([person])
 
+#Regression Model
 probs = lr.predict_proba([person])
 
 probs = np.round(probs, 2)
